@@ -1,0 +1,69 @@
+import time
+import win32com.client as win32
+ 
+#----------------------------------------------------------------------
+def excel():
+    """"""
+    xl = win32.gencache.EnsureDispatch('Excel.Application')
+    ss = xl.Workbooks.Add()
+    sh = ss.ActiveSheet
+ 
+    xl.Visible = True
+    time.sleep(1)
+ 
+    sh.Cells(1,1).Value = 'Hacking Excel with Python Demo'
+ 
+    time.sleep(1)
+    for i in range(2,8):
+        sh.Cells(i,1).Value = 'Line %i' % i
+        time.sleep(1)
+ 
+    ss.Close(False)
+    xl.Application.Quit()
+
+def excel2():
+    """"""
+    xl = win32.gencache.EnsureDispatch('Excel.Application')
+    ss = xl.Workbooks.Open('test')
+    sh = ss.ActiveSheet
+ 
+    xl.Visible = True
+    time.sleep(1)
+ 
+    sh.Cells(1,1).Value = 'Hacking Excel with Python Demo'
+ 
+    time.sleep(1)
+    for i in range(2,8):
+        sh.Cells(i,1).Value = 'Lines %i' % i
+        time.sleep(0.5)
+
+    ss.Save()
+    ss.Close(False)
+    xl.Application.Quit()
+
+def word():
+    wo = win32.gencache.EnsureDispatch('Word.Application')
+    doc = wo.Documents.Open("c:\\temp2\\ae.docx")
+    wo.Visible = True
+
+    doc
+    
+    With Selection.Find
+        .Text = "bla"
+        .Replacement.Text = "bla2"
+        .Forward = True
+        .Wrap = wdFindContinue
+        .Format = False
+        .MatchCase = False
+        .MatchWholeWord = False
+        .MatchWildcards = False
+        .MatchSoundsLike = False
+        .MatchAllWordForms = False
+    End With
+    time.sleep(5)
+
+    doc.Close(False)
+    wo.Application.Quit()
+ 
+if __name__ == "__main__":
+    word()

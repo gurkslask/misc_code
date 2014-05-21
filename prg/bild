@@ -1,0 +1,11 @@
+# -*- coding: cp1252 -*-
+#ROTERA BILD
+import Image
+
+im = "C:\ProgramData\Radius Control Systems\Uni-View\EBEM\Data\Symboler\Blåsmaskiner\BIT\R\Bff.bmp"
+
+print im
+im1 = Image.open(im)
+#im1 = im1.rotate(90)
+im1 = im1.paste(254, (0,0, 1,1))
+im1.save(im)

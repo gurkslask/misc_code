@@ -1,0 +1,44 @@
+# -*- coding: cp1252 -*-
+import shutil
+import time
+
+#namn = ["ANDFRA","ANNANT","ANNCAR","BENSEL","BIRHAD","EDGFER","ERIGRE","ERIMYL",
+#"EVALIN","HAKNIL","INGSVE","ISALJU","JENHOL","JIMSIM","JOAAND","JOAGEO","JOASVE",
+###"JOHALM","JOHSTR","JORMAD","LINSJO","MAGHOV","MATCAR","MICMOS","OLAWAS","PARJOH",
+#"PATSAN","PETBER","PETELG","PETJOH","PETNYB","RIKJOH","ROBWAL","ROLHED","SARUHR",
+#"SIVJID","STEAHL","STEGUS","STEMAL","TOBFOS","TOMERI","TOMHOV","ULFKAR","ULFOHL",
+#"ULFSIM","ULRPER","UNOSVE",]
+
+#fn1 = "c:/temp2/ae.docx"
+#fn2 = "c:/temp2/Säkerhetspolicy förstasida "
+#prefix = ".docx"
+#for namnen in namn:
+#    fn3 = fn2 + namnen + prefix
+#    print fn3
+#    shutil.copyfile(fn1, fn3)
+#    time.sleep(0.8)
+
+"""def uniview():
+    fn1 = "C:\\ProgramData\\Radius Control Systems\\Uni-View\\EBEM\\Data\\Popup\\Ytvatten\\IC"
+    fn2 = "MA1.blw"
+    fn3 = "C:\\ProgramData\\Radius Control Systems\\Uni-View\\EBEM\\Data\\Popup\\Ytvatten\\IC1MA1.blw"
+    for nummer in range(2, 5):
+        print fn1+str(nummer)+fn2
+        fn4 = fn1+str(nummer)+fn2
+        shutil.copyfile(fn3, fn4)
+        time.sleep(0.8)"""
+
+"""def uniview2():
+    fn1 = "C:\\ProgramData\\Radius Control Systems\\Uni-View\\EBEM\\Data\\Popup\\Grundvatten\\RP0"
+    fn2 = ".blw"
+    fn3 = "C:\\ProgramData\\Radius Control Systems\\Uni-View\\EBEM\\Data\\Popup\\Grundvatten\\RP01.blw"
+    for nummer in range(2, 7):
+        print fn1+str(nummer)+fn2
+        fn4 = fn1+str(nummer)+fn2
+        shutil.copyfile(fn3, fn4)
+        time.sleep(0.8)"""
+
+def uniview3():
+	
+        
+uniview2()

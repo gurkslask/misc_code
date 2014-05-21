@@ -1,0 +1,2 @@
+scp -r pi@192.168.1.8:~/Projects/Home-automation/sensors ~/sensors/
+
